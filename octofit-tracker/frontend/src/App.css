@@ -1,0 +1,120 @@
+
+body {
+  background: linear-gradient(135deg, #f0f4f9 0%, #c9e7fa 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  color: #1a2a3a;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(90deg, #0d47a1 0%, #42a5f5 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.octofit-logo {
+  height: 40px;
+  margin-right: 14px;
+  vertical-align: middle;
+}
+.navbar-nav .nav-link {
+  color: #e3f2fd !important;
+  font-weight: 500;
+  margin-right: 8px;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #ffd600 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #0d47a1;
+  font-weight: 700;
+}
+
+/* Buttons */
+button, .btn {
+  background: linear-gradient(90deg, #42a5f5 0%, #0d47a1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(66,165,245,0.12);
+  transition: background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #ffd600 0%, #42a5f5 100%);
+  color: #0d47a1;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 2em;
+}
+th, td {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #e3e3e3;
+}
+th {
+  background: #42a5f5;
+  color: #fff;
+  font-weight: 700;
+}
+tr:nth-child(even) td {
+  background: #f0f4f9;
+}
+
+/* Links */
+a, .App-link {
+  color: #0d47a1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #ffd600;
+}
+
+/* Misc */
+.container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(66,165,245,0.08);
+  padding: 2em 2em 2em 2em;
+  margin-bottom: 2em;
+}
+
+/* Responsive logo for mobile */
+@media (max-width: 600px) {
+  .octofit-logo {
+    height: 28px;
+    margin-right: 8px;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
